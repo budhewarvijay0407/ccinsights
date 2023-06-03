@@ -30,8 +30,8 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
-with open (path_lotti,"r") as file:
-    json_lotti = json.load(file)
+#with open (path_lotti,"r") as file:
+#    json_lotti = json.load(file)
     
 openai_config='openai_config.json'  #give standard path
 open_ai_config = open(openai_config)
@@ -47,7 +47,8 @@ openai.api_key=openai_configuration['key']
 
 with st.sidebar:
     # st.image(image_logo, caption='CCI accounts for the projects undertaken by Vijay')
-    st_lottie(json_lotti,reverse=True,height=350,  width=350,speed=1,  loop=True,quality='high')
+    lotti_sidebar=load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_qgllrmk3/data.json")
+    st_lottie(lotti_sidebar,reverse=True,height=350,  width=350,speed=1,  loop=True,quality='high')
     st.title("Vijay B.'s tech portfolio")
     
     st.markdown('''Meet my AI assistance chatbot Powered by the OpenAI's advanced fine tunned models
