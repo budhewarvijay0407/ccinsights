@@ -47,8 +47,8 @@ openai.api_key=openai_configuration['key']
 
 with st.sidebar:
     # st.image(image_logo, caption='CCI accounts for the projects undertaken by Vijay')
-    lotti_sidebar=load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_qgllrmk3/data.json")
-    st_lottie(lotti_sidebar,reverse=True,height=350,  width=350,speed=1,  loop=True,quality='high')
+    lotti_sidebar=load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_aa0wy04q.json")
+    st_lottie(lotti_sidebar,reverse=True,height=300,  width=300,speed=1,  loop=True,quality='high')
     st.title("Vijay B.'s tech portfolio")
     
     st.markdown('''Meet my AI assistance chatbot Powered by the OpenAI's advanced fine tunned models
