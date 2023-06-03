@@ -51,7 +51,7 @@ with st.sidebar:
     st_lottie(lotti_sidebar,reverse=True,height=300,  width=300,speed=1,  loop=True,quality='high')
     st.title("Vijay B.'s tech portfolio")
     
-    st.markdown('''Meet my AI assistance chatbot Powered by the OpenAI's advanced fine tunned models
+    st.markdown('''You can meet my AI assistant chatbot Powered by the OpenAI's advanced fine tunned models
                 Want to make one for your business?
     ''')
     st.markdown('''These applications are developed and managed by -Vijay B. (vijay.b@ccinsights.com)
@@ -59,7 +59,7 @@ with st.sidebar:
     st.markdown("**Unleash the Power of AI: Upskill your business!**")
     #st.image(image, caption='AI Application System')
     
-tab1,tab2, tab3, tab4 = st.tabs(["Vijay B.-Upwork top rated :star:","Try my AI Assistance", "Summary maker", "Text Classifier/Anomaly Detection"])
+tab1,tab2, tab3, tab4 = st.tabs(["Vijay B.-Upwork top rated :star:","Try my AI Assistant", "Summary maker-TBD", "Text Classifier-TBD"])
 
 
 
@@ -69,7 +69,7 @@ with tab1:
     #st.image(image, caption='Last Updated : 01-06-2023')
     # ---- HEADER SECTION ----
     with st.container():
-        st.title("A Upwork Top rated: Data Scientist and MLops Engineer From India")
+        st.title("An Upwork Top rated Data Scientist and MLops Engineer From India")
         st.write(
             "I am passionate about finding ways to use AI to be more efficient and effective in business settings."
         )
@@ -79,15 +79,16 @@ with tab1:
         st.write("---")
         left_column, right_column = st.columns(2)
         with left_column:
-            st.header("How do I Impact on businesses")
+            st.header("How do I make Impact on businesses:")
             st.write("##")
             st.write(
                 """
-                I have benn working as an entrepreneur since past 6 years and I have deep interests in Technology , I can help businesses who:
-                - are looking for a way to leverage the power of AI in their day-to-day work.
-                - are struggling with repetitive tasks which can be Automated easily using AI.
-                - want to know how Data can have impact on their processes .
-                If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
+                I have been working as a Techie since past 6 years and I have deep interests in AI , I can help businesses who:
+                - Want to leverage Large language models (LLMs) to enhance their productivity and reduce the cost. 
+                - Are looking for a way to leverage the power of AI in their day-to-day work.
+                - Are struggling with repetitive tasks which can be Automated easily using AI.
+                - Want to know how Data can have impact on their processes .
+                If this sounds interesting to you, consider subscribing below, so you don’t miss any content.
                 """
             )
         with right_column:
