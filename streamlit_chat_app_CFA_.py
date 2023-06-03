@@ -122,7 +122,7 @@ with tab2:
     
     if 'generated' not in st.session_state:
         print('Inside')
-        st.session_state['generated'] = ["I'm your AI Assistant, How may I help you?"]
+        st.session_state['generated'] = ["I'm Vijay's AI Assistant, How may I help you?"]
     
     if 'past' not in st.session_state:
         st.session_state['past'] = ['Hi!']
