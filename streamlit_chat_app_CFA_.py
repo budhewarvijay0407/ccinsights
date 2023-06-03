@@ -11,7 +11,7 @@ import requests
 import openai
 
 #image = Image.open('C:\\Users\\Rideema Malji\\OneDrive\\Desktop\\Others\\Upwork\\openAI-chatbot\\ChatBot-main\\images\\Upwork-Top rated.png')
-path_lotti=r'C:\Users\Rideema Malji\OneDrive\Desktop\Others\Upwork\openAI-chatbot\ChatBot-main\lottie\business-analysis.json'
+path_lotti=r'lottie\business-analysis.json'
 
 
 
