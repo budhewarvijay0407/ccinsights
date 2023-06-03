@@ -98,7 +98,7 @@ with tab1:
     # ---- CONTACT ----
     with st.container():
         st.write("---")
-        st.header("Get In Touch With Me!")
+        st.header("Get In Touch-To Read endless blogs on tech and life lessons!")
         st.write("##")
 
         # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
