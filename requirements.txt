@@ -6,3 +6,4 @@ streamlit-lottie
 Pillow
 langchain
 PyPDF2
+chromadb
