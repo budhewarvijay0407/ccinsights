@@ -193,7 +193,7 @@ with tab_qa_docs:
         
     if 'generated_qa' not in st.session_state:
         #print('Inside')
-        st.session_state['generated_qa'] = ["Please upload the pdf below and then ask me questions"]
+        st.session_state['generated_qa'] = ["Please upload the pdf above and then ask me questions"]
     
     if 'past_qa' not in st.session_state:
         st.session_state['past_qa'] = ['I want to ask some questions regarding my pdfs']
@@ -219,7 +219,11 @@ with tab_qa_docs:
                 for i in range(len(st.session_state['generated_qa'])):
                     message(st.session_state['past_qa'][i], is_user=True, key=str(i) + '__user')
                     message(st.session_state['generated_qa'][i], key=str(i)+'g')
-
+                    
+                    
+    st.write("*This application only uses first 5 (or less) pages of your PDF*")
+    
+    
     uploaded_file = st.file_uploader('Upload pdf', type='pdf', accept_multiple_files=False, on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
     response_container_qa = st.container()
     colored_header(label='', description='', color_name='yellow-30')
@@ -260,6 +264,19 @@ with tab_qa_docs:
         user_input_qa = get_text_qa()
         print('I got the input text as :',user_input_qa)
         resp_qa()
+    
+    st.write(
+        """
+        -- This application is working using following techstack
+        - Python
+        - Langchain
+        - OpenAI's GPT model
+        - Chromadb
+        - Streamlit
+        
+        This is just an overview..alot of things are cooking inside'
+        """
+    )
 
             
             
