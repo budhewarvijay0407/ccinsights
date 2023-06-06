@@ -5,3 +5,4 @@ streamlit-chat
 streamlit-lottie
 Pillow
 langchain
+PyPDF2
