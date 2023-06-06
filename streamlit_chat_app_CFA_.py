@@ -277,6 +277,11 @@ with tab_qa_docs:
         This is just an overview..alot of things are cooking inside'
         """
     )
+    st.write(
+        """
+          Want to see more powerful application- Connect with me '
+        """
+    )
 
             
             
