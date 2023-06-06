@@ -1,0 +1,9 @@
+openai
+streamlit
+streamlit-extras
+streamlit-chat
+streamlit-lottie
+Pillow
+langchain
+PyPDF2
+chromadb
