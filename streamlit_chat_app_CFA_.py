@@ -180,7 +180,7 @@ with tab2:
     with input_container:
         user_input = get_text()
         resp()
-        
+    st.write("*Please note that you might get Rate limit error - Because Im paying Openai to use their models*")
        
 
 with tab_qa_docs:
@@ -282,6 +282,7 @@ with tab_qa_docs:
           Want to see more powerful application- Connect with me '
         """
     )
+    st.write("*Please note that you might get Rate limit error - Because Im paying Openai to use their models*")
 
             
             
