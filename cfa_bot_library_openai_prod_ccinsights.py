@@ -10,7 +10,7 @@ import openai
 openai_config='openai_config.json'
 open_ai_config = open(openai_config)
 openai_configuration=json.load(open_ai_config)
-
+#Dummy change
 #persist_directory_stored='C:\\Users\\Rideema Malji\\OneDrive\\Desktop\\Others\\Upwork\\CFA\\Training dataset\\openai-chroma-db-directory\\'
 
 completion=openai.Completion()
