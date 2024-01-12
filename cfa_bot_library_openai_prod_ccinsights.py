@@ -35,9 +35,18 @@ def chat_response_normal(query,chat_log = None):
     if(chat_log == None):
         chat_log = start_chat_log
     prompt = f"{start_chat_log}Q: {query}\nA:"
-    response = completion.create(prompt = prompt, model =  "text-davinci-003", temperature = 1,top_p=1, frequency_penalty=0,
-    presence_penalty=0.7, best_of=1,max_tokens=150,stop = "\nQ: ")
-    return response.choices[0].text
+    response = client.chat.completions.create(
+      model="gpt-4", 
+      messages=[{"role":"system","content":f"You are a assistant of Vijay B , you have answer to the queries from user about Vijay B and his Data science services , use below information for answering the queries\
+      {start_chat_log}"},
+      {"role":"user","content":f"query"}]
+     ,
+        frequency_penalty = 1.6,
+        temperature = 0.8,
+        max_tokens=450,
+        response_format={ "type": "json_object" }
+    )
+    return response.choices[0].message.content.strip()
 
 
 def wrap_text_preserve_newlines(text, width=110):
